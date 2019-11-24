@@ -2,37 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css"/>
     <title>Weather App</title>
 </head>
 
 <body>
-    
+    <nav class="navbar navbar-dark bg-dark text-center">
+        <h1 class="navbar-brand" style="margin: auto; font-size: 30px;">Weather Dashboard</h1>
+    </nav>
+
+    <h4>Search For a City:</h4>
+
+    <div class="row">
+        <div class="col-sm-3" style="background-color: rgb(224, 99, 99);">
+            <div class="search">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 searchInput" type="search" aria-label="Search" placeholder="">
+                    <i class="fas fa-search search-icon" id="BtnSearch"></i>
+                    
+
+                    <div class="searchHistory"></div>
+            </div>
+            <div class="col-sm-9">
+                <div class="currentWeather"></div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="weather.js"></script>
 
 
-    <div class="jumbotron">
-        <h1>Weather Dashboard</h1>
-    </div>
-
-    <!-- Search form -->
-
-
-    <div class="md-form mt-0">
-
-        <!-- <input class="form-control" type="text" placeholder="Search" aria-label="Search"> -->
-    </div>
-    <div class="panel-body">
-        <form role="form">
-            <div class="form-group">
-                <label for="search"> Search for City:</label>
-                <input type="text" class="form-control" id="search" <!-- </div -->
-        </form>
-    </div>
-    <button type="search" class="btn btn-default">Search</button>
-
-<!-- <div class = "panel-body">
-    <div class = "well">
-        <h2>City</h2> -->
 </body>
 
 </html>

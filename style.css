@@ -1,0 +1,58 @@
+search {
+    margin: 20px;
+    overflow: auto;
+    position: relative;
+}
+
+.BtnInput {
+    width: 80%
+}
+
+.form-control {
+    display: inline-block;
+}
+
+.searchHistory {
+    width: 95%;
+    margin: auto;
+}
+
+.col-sm-3 {
+    height: 100vh;
+}
+
+
+.currentWeather {
+    border: 1px solid #C1C1C1 ;
+    margin-top: 5%;
+}
+
+.search-icon {
+    background-color: #4EA4E8 ;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    overflow: auto;
+    margin-left: 10px;
+}
+
+.historyBlock {
+    display: block;
+    background-color: white;
+    color: gray;
+    height: 40px;
+    border-bottom: 1px solid #C1C1C1 ;
+    margin: auto;
+    padding: 2%;
+    width: 95%;
+}
+
+
+
+
+
+
+
+
+
