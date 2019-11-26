@@ -1,20 +1,17 @@
-search {
+/* search {
     margin: 20px;
     overflow: auto;
     position: relative;
-}
-
-.BtnInput {
-    width: 80%
-}
+} */
 
 .form-control {
     display: inline-block;
 }
 
 .searchHistory {
-    width: 95%;
+    width: 100%;
     margin: auto;
+    text:
 }
 
 .col-sm-3 {
@@ -23,21 +20,22 @@ search {
 
 
 .currentWeather {
-    border: 1px solid #C1C1C1 ;
-    margin-top: 5%;
+    border: 1px solid rgb(196, 198, 233) ;
+    margin-top: 11%;
+    width: 142%;
 }
 
 .search-icon {
     background-color: #4EA4E8 ;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    /* border-radius: 5px; */
     display: flex;
     overflow: auto;
     margin-left: 10px;
 }
 
-.historyBlock {
+/* .historyBlock {
     display: block;
     background-color: white;
     color: gray;
@@ -46,7 +44,7 @@ search {
     margin: auto;
     padding: 2%;
     width: 95%;
-}
+} */
 
 
 
