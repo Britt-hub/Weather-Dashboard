@@ -35,6 +35,14 @@
     margin-left: 10px;
 }
 
+.city {
+    font-size: 1.8em; 
+}
+
+.card {
+    margin-top: 20px;
+}
+
 /* .historyBlock {
     display: block;
     background-color: white;

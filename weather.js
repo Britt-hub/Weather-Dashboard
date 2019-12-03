@@ -11,26 +11,36 @@ function runQuery(queryURL) {
         })
 }
 
+
+
 //create function
 //display each city that was searched
 //also add weather info
 function displayCity(city, weatherData) {
+
     var divElement = document.createElement("Div");
     var cityElement = document.createElement("Div");
     var humidityElement = document.createElement("Div");
     var windSpeedElement = document.createElement("Div");
+    var tempElement = document.createElement("Div");
+    var cardElement = document.createElement("Div");
+    cardElement.classList.add("card");
+    divElement.classList.add("card-body");
+    tempElement.classList.add("temp");
     cityElement.classList.add("city");
     humidityElement.classList.add("humidity");
     windSpeedElement.classList.add("windSpeed");
     cityElement.innerHTML = city + " " + moment().format("MM/DD/YYYY")
-    humidityElement.innerHTML = weatherData.main.humidity
-    windSpeedElement.innerHTML = weatherData.wind.speed
+    humidityElement.innerHTML = "Humidity : " + weatherData.main.humidity
+    windSpeedElement.innerHTML = "Wind Speed : " + weatherData.wind.speed
+    tempElement.innerHTML ="Temperture : " + weatherData.main.temp + " F"
 
     divElement.append(cityElement);
     divElement.append(windSpeedElement);
     divElement.append(humidityElement);
-    divElement.append(weatherData.main.temp);
-    $(".searchHistory").append(divElement);
+    divElement.append(tempElement);
+    cardElement.append(divElement);
+    $(".searchHistory").prepend(cardElement);
 }
 
 
