@@ -33,7 +33,7 @@ function displayCity(city, weatherData) {
     cityElement.innerHTML = city + " " + moment().format("MM/DD/YYYY")
     humidityElement.innerHTML = "Humidity : " + weatherData.main.humidity
     windSpeedElement.innerHTML = "Wind Speed : " + weatherData.wind.speed
-    tempElement.innerHTML ="Temperture : " + weatherData.main.temp + " F"
+    tempElement.innerHTML = "Temperture : " + weatherData.main.temp + " F"
 
     divElement.append(cityElement);
     divElement.append(windSpeedElement);
@@ -45,7 +45,6 @@ function displayCity(city, weatherData) {
 
 
 
-// API seems not to be working. May have the wrong call or ajax
 $('#BtnSearch').on('click', function () {
     city = $(".searchInput").val()
     console.log(city)
